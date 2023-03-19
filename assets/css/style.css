@@ -558,7 +558,6 @@ p {
 #about {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
   padding-top: 120px;
 }
 
@@ -593,7 +592,6 @@ p {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #f7f7f7;
   position: relative;
   padding-bottom: 80px;
 }
@@ -644,6 +642,7 @@ p {
 #portfolio {
   position: relative;
   padding-bottom: 50px;
+  background: #f7f7f7;
 }
 
 #portfolio #portfolio-flters {
