@@ -1,7 +1,7 @@
 /**
 * Template Name: Folio
 * Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+* Template URL: https://bootstrapmade.com/folio-bootstrap-challenges-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -207,10 +207,10 @@
     }
   });
 
-  /**
+   /**
    * Porfolio isotope and filter
    */
-  window.addEventListener('load', () => {
+   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
@@ -247,6 +247,59 @@
    * Portfolio details slider
    */
   new Swiper('.portfolio-details-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+ 
+  /**
+   * Porfolio isotope and filter
+   */
+  window.addEventListener('load', () => {
+    let challengesContainer = select('.challenges-container');
+    if (challengesContainer) {
+      let challengesIsotope = new Isotope(challengesContainer, {
+        itemSelector: '.challenges-item',
+        layoutMode: 'fitRows'
+      });
+
+      let challengesFilters = select('#challenges-flters li', true);
+
+      on('click', '#challenges-flters li', function(e) {
+        e.preventDefault();
+        challengesFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        challengesIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+
+      }, true);
+    }
+
+  });
+
+  /**
+   * Initiate challenges lightbox 
+   */
+  const challengesLightbox = GLightbox({
+    selector: '.challenges-lightbox'
+  });
+
+  /**
+   * challenges details slider
+   */
+  new Swiper('.challenges-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {
