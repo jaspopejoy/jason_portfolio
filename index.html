@@ -31,6 +31,10 @@
     <!-- Box Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
+<!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
     <!-- Template Main CSS File -->
     <link href="/css/site.css" rel="stylesheet">
 </head>
@@ -60,7 +64,7 @@
             <!-- .nav-menu -->
             <nav id="navbar" class="nav-menu navbar">
                 <ul>
-                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                    <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i>
                             <span>Home</span></a></li>
                     <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
                     </li>
@@ -79,18 +83,23 @@
         </div>
     </header><!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="home" class="hero d-flex flex-column justify-content-center align-items-center">
-        <div class="home-container" data-aos="fade-in">
-            <h1>Jason Popejoy</h1>
-            <p>I’m a <span class="typed"></span></p>
-            <p class="hero-blurb">Fueled by coffee & driven by curiosity.</p>
-            <a href="#portfolio" class="btn cta-btn mt-3">View My Work</a>
-        </div>
-    </section>
-    <!-- End Hero -->
+
 
     <main id="main">
+
+        <!-- ======= Hero Section ======= -->
+        <!-- Hero Section -->
+        <section id="home" class="hero d-flex flex-column justify-content-center align-items-center">
+            <div class="home-container" data-aos="fade-in">
+                <h1>Jason Popejoy</h1>
+                <p>I’m a <span class="typed"></span></p>
+                <p class="hero-blurb">Fueled by coffee ☕ | Driven by curiosity 🔍 | Building for impact 💡</p>
+                <a href="#portfolio" class="btn cta-btn mt-3">View My Work</a>
+                <a href="https://www.fiverr.com/s/EgDKZ3e" class="btn cta-btn mt-3" target="_blank">Hire Me on
+                    Fiverr</a>
+            </div>
+        </section>
+        <!-- End Hero -->
 
         <!-- ======= About Section ======= -->
         <section id="about" class="about section-bg">
@@ -100,52 +109,95 @@
                 </div>
 
                 <div class="row">
+                    <!-- Profile Image -->
                     <div class="col-lg-4" data-aos="fade-right">
-                        <img src="/img/portfolioimg.jpeg" class="img-fluid" alt="Jason Popejoy portrait" />
+                        <img src="/img/portfolioimg.jpeg" class="img-fluid rounded shadow-sm"
+                            alt="Jason Popejoy portrait" />
                     </div>
+
+                    <!-- About Content -->
                     <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                         <h3>Full Stack Web Developer</h3>
-                        <p class="fst-italic">
-                            I have a passion for web design and development and am an enthusiastic full stack developer.
-                            The skill set I possess for writing and maintaining websites includes C#, ASP.NET MVC,
-                            PostgreSQL, JavaScript, HTML, CSS, and Bootstrap. Furthermore, I possess exceptional
-                            communication
-                            skills both written and verbal, and am experienced in interacting with a broad range of
-                            personalities.
-                            Below are several examples of projects and challenges I've completed that demonstrate my
-                            skills.
+                        <p class="bio">
+                            I’m a full stack developer with a strong background in IT, passionate about solving problems
+                            and creating user-friendly applications.
+                            With experience in ASP.NET MVC, C#, Java, C++, Microsoft SQL Server, PostgreSQL, JavaScript, HTML, CSS, and Bootstrap, I
+                            build scalable and responsive solutions.
+                            Graduated <span class="highlight">Summa Cum Laude</span> with a B.S. in Information
+                            Technology – Software Development, and a proud
+                            <span class="highlight">Coder Foundry Graduate</span>.
                         </p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Jason
-                                            Popejoy</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Antlers,
-                                            Ok.</span></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                                        <span>jaspopejoy@gmail.com</span>
-                                    </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
-                                        <span>Bachelor's of Science in IT with a Concentration in Software
-                                            Development</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <a href="/files/Jason Popejoy Resume.docx" download class="btn btn-info"
-                                type="button">Download
+                        <span class="tagline">Fueled by coffee ☕ | Driven by curiosity 🔍 | Building for impact 💡</span>
+
+<!-- Quick Info -->
+<div class="row quick-info mt-4">
+  <div class="col-lg-6">
+    <ul class="info-list">
+      <li>
+        <i class="bi bi-chevron-right"></i>
+        <div class="info-content">
+          <strong>Name:</strong>
+          <span class="info-value">Jason Popejoy</span>
+        </div>
+      </li>
+      <li>
+        <i class="bi bi-chevron-right"></i>
+        <div class="info-content">
+          <strong>Email:</strong>
+          <span class="info-value"><a href="mailto:jaspopejoy@gmail.com">jaspopejoy@gmail.com</a></span>
+        </div>
+      </li>
+      <li>
+        <i class="bi bi-chevron-right"></i>
+        <div class="info-content">
+          <strong>City:</strong>
+          <span class="info-value">Antlers, OK</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="col-lg-6">
+    <ul class="info-list">
+      <li>
+        <i class="bi bi-chevron-right"></i>
+        <div class="info-content">
+          <strong>Experience:</strong>
+          <span class="info-value">3+ Years Web Development & IT</span>
+        </div>
+      </li>
+      <li>
+        <i class="bi bi-chevron-right"></i>
+        <div class="info-content">
+          <strong>Stack:</strong>
+          <span class="info-value">C#, ASP.NET, PostgreSQL, JavaScript, Bootstrap</span>
+        </div>
+      </li>
+      <li>
+        <i class="bi bi-chevron-right"></i>
+        <div class="info-content">
+          <strong>Availability:</strong>
+          <span class="info-value">Freelance & Remote</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+                        <!-- Resume + Fiverr Buttons -->
+                        <div class="mt-3">
+                            <a href="/files/Jason Popejoy Resume.docx" download class="btn btn-info me-2">Download
                                 Resume</a>
+                            <a href="https://www.fiverr.com/s/EgDKZ3e" target="_blank" class="btn btn-success">Hire Me
+                                on Fiverr</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- End About Section -->
+
+
+
 
     </main>
 
